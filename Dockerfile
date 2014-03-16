@@ -19,7 +19,7 @@ RUN apt-get install -y curl
 RUN apt-get install -y rlwrap
 RUN apt-get install -y nodejs 
 # Download Ghost v0.4.1
-RUN curl -L https://ghost.org/zip/ghost-0.4.1.zip > /tmp/ghost.zip
+RUN curl -L https://ghost.org/zip/ghost-latest.zip -o /tmp/ghost.zip
 # Unzip Ghost zip to /data/ghost
 RUN unzip -uo /tmp/ghost.zip -d /data/ghost
 # Add custom config js to /data/ghost
